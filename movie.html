@@ -1,0 +1,105 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{
+      margin: 0;
+      background-color: #F8FFFF
+    }
+    header{
+      margin-top: -80px;
+      margin-left:-50px;
+      margin-right:auto;
+      display: flex;
+      flax-direction: row;
+      list-style-type: none;
+      position: fixed;
+    }
+
+    .nav-container{
+      display: flex;
+      flax-direction: row;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #5CD1E5;
+      list-style-type: none;
+      position: fixed;
+      top: 110;
+    }
+
+    .nav-item {
+      padding: 18px;
+      cursor: pointer;
+    }
+    .nav-item a {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+    .nav-item:nth-child(1) {
+      background-color: lightseagreen;
+    }
+    .nav-item: hover{
+      background-color: grey;
+    }
+    #logo{
+      float: left;
+      margin: 20px 0 100px 20px;
+      background-color: white;
+
+    }
+    #navi{
+      margin-right: 20px;
+      margin-top: 0px;
+      font-size: 15px;
+      text-align: right;
+      color: #3D3D3D;
+      background-color: white;
+    }
+    a{
+      text-decoration : none;
+      color:#3D3D3D;
+    }
+    #main_img{
+      width: 100%;
+      height: 281px;
+      background-image: url('img/.police.jpg');
+      background-repeat: no-repeat;
+      background-position: top-center;
+      margin-top: 100px;
+    }
+    #contents{
+      width: 1140px;
+      margin: 0 auto;
+    }
+    </style>
+  </head>
+  <body>
+    <body>
+      <header>
+        <div id='logo'>
+          <a href='index.html'><img src='img/logo.png' width='200' height='200'></a>
+          </div>
+      </header>
+      <nav>
+        <ul class="nav-container">
+        <li class="nav-item"> <a href="">강하늘에 대해 알아보아요</a> </li>
+        <li class="nav-item"> <a href="">강하늘의 영화</a> </li>
+        <li class="nav-item"> <a href="">강하늘의 드라마</a> </li>
+        <li class="nav-item"> <a href="">강하늘의 연극</a> </li>
+        <li class="nav-item"> <a href="">강하늘의 예능</a> </li>
+      </nav>
+      <p id='navi'>
+        <a href="login.html" target="if_a">LOGIN</a>│
+        <a href="sign.html" target="if_a">SIGNUP</a>│
+        <a href="contact.html" target="if_a">CONTACT</a>|</p>
+        <section id='main_img'>
+          <center>
+          <img src='img/police.jpg'width='1380'height='500'>
+          </center>
+          </section>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/m.css">
+    <title></title>
+    <style>
+
+      </style>
+  </head>
+  <body>
+    <script>
+    $(function(){
+      $(".zeta-menu li").hover(function(){
+        $('ul:first',this).show();
+      }, function(){
+        $('ul:first',this).hide();
+      });
+      $(".zeta-menu>li:has(ul)>a").each( function() {
+        $(this).html( $(this).html()+' &or;' );
+      });
+      $(".zeta-menu ul li:has(ul)")
+        .find("a:first")
+        .append("<p style='float:right;margin:-3px'>&#9656;</p>");
+    });
+    </script>
+
+    <div class='zeta-menu-bar'>
+      <ul class="zeta-menu">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">1번 메뉴</a></li>
+        <li><a href="#">2번 메뉴</a>
+          <ul>
+            <li><a href="#">2-A 메뉴</a></li>
+            <li><a href="#">2-B 메뉴</a>
+              <ul>
+                <li><a href="#">2-B-1 메뉴</a></li>
+                <li><a href="#">2-B-2 메뉴</a></li>
+              </ul>
+            </li>
+            <li><a href="#">2-C 메뉴</a></li>
+            <li><a href="#">2-D 메뉴</a>
+              <ul>
+                <li><a href="#">2-D-1 메뉴</a></li>
+                <li><a href="#">2-D-2 메뉴</a></li>
+                <li><a href="#">2-D-3 메뉴</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">3번 메뉴</a>
+          <ul>
+            <li><a href="#">3-A 메뉴</a></li>
+            <li><a href="#">3-B 메뉴</a></li>
+          </ul>
+        </li>
+        <li><a href="#">4번 메뉴</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
